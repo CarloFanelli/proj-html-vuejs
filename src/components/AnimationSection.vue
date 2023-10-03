@@ -93,6 +93,7 @@ export default {
     background-image: url('../assets/img/smart.png');
     background-repeat: no-repeat;
     background-size: contain;
+    margin-bottom: 9rem;
 
     .content {
         margin: 3rem auto;
