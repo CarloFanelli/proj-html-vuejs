@@ -54,8 +54,7 @@ li {
 
 li:last-of-type {
 
-    @include button-filled;
+    @include btn-filled;
 
-    a {}
 }
 </style>

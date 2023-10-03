@@ -1,15 +1,17 @@
 <script>
+import AppJumbo from './AppJumbo.vue';
 import AppNav from './AppNav.vue';
 
 export default {
     name: 'AppHeader',
-    components: { AppNav }
+    components: { AppNav, AppJumbo }
 }
 </script>
 
 <template>
     <div class="appHeader">
         <AppNav></AppNav>
+        <AppJumbo></AppJumbo>
     </div>
 </template>
 
