@@ -4,12 +4,13 @@ import AppNav from './AppNav.vue';
 
 export default {
     name: 'AppHeader',
-    components: { AppNav, AppJumbo }
+    components: { AppNav, AppJumbo, }
 }
 </script>
 
 <template>
     <div class="appHeader">
+
         <AppNav></AppNav>
         <AppJumbo></AppJumbo>
     </div>
@@ -18,8 +19,8 @@ export default {
 <style lang="scss" scoped>
 @use '../assets/scss/partials/variables' as *;
 
-.appHeader {
-    height: 100vh;
+/* .appHeader {
     background-image: url('../assets/img/banner-bg.png');
-}
+    background-repeat: no-repeat;
+} */
 </style>
