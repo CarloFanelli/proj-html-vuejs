@@ -45,6 +45,10 @@ export default {
 @use '../assets/scss/partials/variables' as *;
 @use '../assets/scss/partials/elements' as *;
 
+.navbar {
+    z-index: 2;
+}
+
 
 li {
     a {
