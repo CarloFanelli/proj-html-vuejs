@@ -5,7 +5,7 @@ export default {
 </script>
 
 <template>
-    <section class="process_section my-5">
+    <section class="process_section">
 
         <div class="container">
             <div class="row">
@@ -89,11 +89,7 @@ export default {
 @use '../assets/scss/partials/variables' as *;
 
 .process_section {
-
-    /*     background-image: url('../assets/img/process-thumb.png');
- */
-    background-repeat: no-repeat;
-    background-size: contain;
+    margin: 3rem auto 10rem;
 
     .rocket_girl {
         left: -60%;
@@ -127,7 +123,7 @@ export default {
 
         .numerator {
             color: $main_color;
-            background: $main_soft;
+            background: #b1a6fd5c;
             display: flex;
             flex-direction: column;
             justify-content: end;
