@@ -19,8 +19,8 @@ export default {
 <style lang="scss" scoped>
 @use '../assets/scss/partials/variables' as *;
 
-/* .appHeader {
+.appHeader {
     background-image: url('../assets/img/banner-bg.png');
     background-repeat: no-repeat;
-} */
+}
 </style>

@@ -18,4 +18,8 @@ export default {
   <AppMain></AppMain>
 </template>
 
-<style scoped></style>
+<style scoped>
+* {
+  overflow-y: hidden;
+}
+</style>
