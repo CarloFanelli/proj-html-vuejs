@@ -9,7 +9,7 @@ export default {
         <img height="100%" class="position-absolute globe" src="../assets/img/globe.png" alt="">
         <div class="content">
 
-            <img class="shape_top" src="../assets/img/shape-top.png" alt="">
+            <img class="img-fluid shape_top" src="../assets/img/shape-top.png" alt="">
             <div class="container py-5">
 
                 <h1 class="title text-center">Anidio Quick Facts</h1>
@@ -42,7 +42,7 @@ export default {
 
             </div>
 
-            <img class="shape_bottom" src="../assets/img/shape-bottom.png" alt="">
+            <img class="img-fluid shape_bottom" src="../assets/img/shape-bottom.png" alt="">
         </div>
 
     </section>
@@ -58,13 +58,13 @@ export default {
     background-size: cover;
 
     .shape_top {
-        margin-top: -1px;
+        margin-top: -5px;
         z-index: 2;
         position: relative;
     }
 
     .shape_bottom {
-        margin-bottom: -1px;
+        margin-bottom: -5px;
         z-index: 2;
         position: relative;
     }

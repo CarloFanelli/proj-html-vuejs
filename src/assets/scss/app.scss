@@ -1,1 +1,12 @@
-@use 'bootstrap'
+@use 'bootstrap';
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.w-40 {
+    width: 40%;
+}
