@@ -52,7 +52,7 @@ export default {
 @use '../assets/scss/partials/variables' as *;
 
 .anidio_quick_facts {
-    background-image: url('../assets/img/preloader.png');
+    background-image: url('../assets/img/counter-bg.png');
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -70,6 +70,8 @@ export default {
     }
 
     .content {
+        z-index: 2;
+
         .title {
             color: $light;
         }
