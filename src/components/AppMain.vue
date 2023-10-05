@@ -14,6 +14,8 @@ export default {
 
 <template>
     <main>
+        <img class="shape w-100 m-0 p-0 img-fluid" src="../assets/img/bottom-shape.png" alt="">
+
         <AnimationSection></AnimationSection>
         <FactsSection></FactsSection>
         <WorksSection></WorksSection>

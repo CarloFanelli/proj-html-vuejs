@@ -36,4 +36,16 @@
             }
         }
     }
+
+    .icon.fb:hover {
+        background-color: $evidence !important;
+        border: none !important;
+
+        svg {
+            path {
+                filter: invert(95%) sepia(97%) saturate(14%) hue-rotate(213deg) brightness(104%) contrast(104%) !important;
+
+            }
+        }
+    }
 }

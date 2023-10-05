@@ -80,7 +80,27 @@ export default {
 .social {
     margin: auto;
 
-    .icon {
+    .icon.insta,
+    .icon.twitter {
+        height: 2rem;
+        aspect-ratio: 1;
+        border: 1px solid $main_light;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: $light;
+
+
+        svg {
+            path {
+                color: $main_light;
+
+            }
+        }
+    }
+
+    .icon.fb {
         height: 2rem;
         aspect-ratio: 1;
         border: 1px solid $main_light;
@@ -92,10 +112,12 @@ export default {
 
         svg {
             path {
-                color: $main_light;
-
+                filter: invert(21%) sepia(93%) saturate(7002%) hue-rotate(251deg) brightness(92%) contrast(86%);
             }
         }
     }
+
+
+
 }
 </style>

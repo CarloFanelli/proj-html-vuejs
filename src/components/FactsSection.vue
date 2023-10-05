@@ -58,7 +58,7 @@ export default {
     background-size: cover;
 
     .shape_top {
-        margin-top: -5px;
+        margin-top: -6px;
         z-index: 2;
         position: relative;
     }

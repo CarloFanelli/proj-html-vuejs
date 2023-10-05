@@ -65,4 +65,10 @@ li:last-of-type {
     @include btn-filled;
 
 }
+
+li:last-of-type:hover {
+
+    @include btn-not-filled;
+
+}
 </style>

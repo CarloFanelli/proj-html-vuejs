@@ -61,10 +61,6 @@ export default {
 @use '../assets/scss/partials/elements' as *;
 
 .jumbotron {
-    /* .bg_jumbo {
-        background-image: url('../assets/img/banner-bg.png');
-
-    } */
 
     .jumbo_content {
         color: $light;

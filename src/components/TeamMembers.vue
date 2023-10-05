@@ -227,7 +227,25 @@ export default {
 
                 svg {
                     path {
-                        color: $main_color;
+                        color: $main_light;
+
+                    }
+                }
+            }
+
+            .icon.fb {
+                height: 2rem;
+                aspect-ratio: 1;
+                border: 1px solid $main_color;
+                border-radius: 50%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background: $light;
+
+                svg {
+                    path {
+                        filter: invert(20%) sepia(64%) saturate(4274%) hue-rotate(246deg) brightness(87%) contrast(99%);
 
                     }
                 }

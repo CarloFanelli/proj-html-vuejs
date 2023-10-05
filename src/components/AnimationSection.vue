@@ -5,7 +5,9 @@ export default {
 </script>
 
 <template>
-    <section class="animation_section">
+    <section class="animation_section position-relative">
+        <img class="shape w-100 m-0 p-0 img-fluid position-absolute" src="../assets/img/bottom-shape.png" alt="">
+
         <div class="container-fluid">
             <div class="row">
                 <div class="col-3">
@@ -88,6 +90,10 @@ export default {
 
 <style lang="scss" scoped>
 @use '../assets/scss/partials/variables' as *;
+
+.shape {
+    top: -100px;
+}
 
 .animation_section {
     background-image: url('../assets/img/smart.png');
