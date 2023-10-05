@@ -1,6 +1,37 @@
 <script>
+import { state } from '../state';
+
 export default {
-    name: 'ProcessSection'
+    name: 'ProcessSection',
+    data() {
+        return {
+            state
+        }
+    },
+    methods: {
+        nextBtn() {
+            if (state.processIndex < state.processSlider.length - 1) {
+                state.processIndex++;
+            }
+            else {
+                state.processIndex = 0;
+            }
+            console.log(state.processIndex);
+        },
+        prevBtn() {
+            if (state.processIndex > 0) {
+                state.processIndex--;
+            }
+            else {
+                state.processIndex = state.processSlider.length - 1;
+            }
+            console.log(state.processIndex);
+
+        },
+        getImageUrl(name) {
+            return new URL(name, import.meta.url).href
+        },
+    }
 }
 </script>
 
@@ -25,47 +56,45 @@ export default {
                             <div class="card rounded-5">
                                 <div class="my_circle w-50">
 
-                                    <img class="img-fluid" src="../assets/img/process2.png" alt="">
+                                    <img class="img-fluid" :src="getImageUrl(state.processSlider[state.processIndex].img)"
+                                        alt="">
                                 </div>
 
-                                <h5 class="my-1">Pre Production</h5>
-                                <p class="my-3">We'll take your idea and create a technical script which consist of action
-                                    notes and
-                                    animation description</p>
+                                <h5 class="my-1">{{ state.processSlider[state.processIndex].title }}</h5>
+                                <p class="my-3">{{ state.processSlider[state.processIndex].description }}</p>
                                 <div class="numerator">
-                                    <span>1</span>
+                                    <span>{{ state.processSlider[state.processIndex].id }}</span>
                                 </div>
                             </div>
                         </div>
+
                         <div class="col-6">
                             <div class="card rounded-5">
                                 <div class="my_circle w-50">
 
-                                    <img class="img-fluid" src="../assets/img/process1.png" alt="">
+                                    <img class="img-fluid" :src="getImageUrl(state.processSlider[state.processIndex + 1].img)"
+                                        alt="">
                                 </div>
 
-                                <h5 class="my-1">Scripting</h5>
-                                <p class="my-3">We'll take your idea and create a technical script which consist of action
-                                    notes and
-                                    animation description</p>
-
+                                <h5 class="my-1">{{ state.processSlider[state.processIndex + 1].title }}</h5>
+                                <p class="my-3">{{ state.processSlider[state.processIndex + 1].description }}</p>
                                 <div class="numerator">
-                                    <span>2</span>
+                                    <span>{{ state.processSlider[state.processIndex + 1].id }}</span>
                                 </div>
-
                             </div>
                         </div>
 
+
                         <div class="arrows d-flex p-3 gap-2">
 
-                            <div class="prev arrow">
+                            <div @click="prevBtn()" class="prev arrow">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor"
                                     class="bi bi-arrow-left-short" viewBox="0 0 16 16">
                                     <path fill-rule="evenodd"
                                         d="M12 8a.5.5 0 0 1-.5.5H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5H11.5a.5.5 0 0 1 .5.5z" />
                                 </svg>
                             </div>
-                            <div class="next arrow">
+                            <div @click="nextBtn()" class="next arrow">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor"
                                     class="bi bi-arrow-right-short" viewBox="0 0 16 16">
                                     <path fill-rule="evenodd"

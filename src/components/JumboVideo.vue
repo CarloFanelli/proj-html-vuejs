@@ -36,7 +36,7 @@ export default {
 
 .shape {
     position: absolute;
-    top: 115px;
+    top: 110px;
 }
 
 .external {
