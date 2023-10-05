@@ -1,16 +1,11 @@
 <script>
-import { state } from '../state';
 
 export default {
     name: 'AppNav',
     data() {
-        return {
-            state
-        }
+
     },
-    props: {
-        menuItems: Array,
-    }
+    props: { menuItems: Array }
 
 }
 </script>
@@ -31,7 +26,7 @@ export default {
                                 class="visually-hidden">(current)</span></a>
                     </li> -->
 
-                    <li v-for="menuItem in state.menuItems" class="nav-item">
+                    <li v-for="menuItem in this.menuItems" class="nav-item">
                         <a class="text-capitalize nav-link" href="#">{{ menuItem }}</a>
                     </li>
                 </ul>

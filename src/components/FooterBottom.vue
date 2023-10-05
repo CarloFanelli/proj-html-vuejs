@@ -1,13 +1,10 @@
 <script>
-import { state } from '../state';
 
 export default {
     name: 'FooterBottom',
 
-    data() {
-        return {
-            state
-        }
+    props: {
+        footerMenuItems: Array,
     }
 }
 </script>
@@ -20,7 +17,7 @@ export default {
             </div>
             <div class="col-6">
                 <ul class="footer_nav d-flex justify-content-end gap-3">
-                    <li class="footer_item text-capitalize" v-for="footerMenuItem in state.footerMenuItems">{{
+                    <li class="footer_item text-capitalize" v-for="footerMenuItem in this.footerMenuItems">{{
                         footerMenuItem }}</li>
                 </ul>
             </div>
