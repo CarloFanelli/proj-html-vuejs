@@ -12,7 +12,7 @@ export default {
 
             <div class="row">
                 <div class="col-10 m-auto ">
-                    <div class="video position-relative ">
+                    <div class="video d-flex justify-content-center position-relative">
                         <img class="img-fluid" src="../assets/img/middle.png" alt="">
 
                         <div class="rounded-circle external shadow">
